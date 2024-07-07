@@ -1,0 +1,27 @@
+.custom-range {
+    /* Adjust thumb position to align with numbers */
+    margin-top: 20px;
+  }
+  
+  .custom-range::-webkit-slider-runnable-track {
+    /* Filling the left side of the slider */
+    background: linear-gradient(to right, blue 0%, blue var(--fill-percentage), lightgray var(--fill-percentage), lightgray 100%);
+  }
+  
+  .custom-range {
+    /* Update --fill-percentage based on value */
+    --fill-percentage: calc(((var(--value) - var(--min)) / (var(--max) - var(--min))) * 100%);
+  }
+  
+  .mark {
+    /* Adjust alignment */
+    position: relative;
+    top: -2px;
+    background: none;
+    color: black; /* or any color you prefer for the text */
+  }
+
+  .form-container {
+    padding-bottom: 50px; /* Adjust the value as needed */
+  }
+  

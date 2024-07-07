@@ -1,0 +1,21 @@
+.table-row-hover:hover {
+    background-color: #F0F0F0;
+}
+
+.datetime .date {
+    margin-right: 5px; /* Adjust the space as needed */
+  }
+
+/*for wrapping the first name in dashboard*/
+.wrap-text {
+    word-wrap: break-word; /* Allows long words to be able to break and wrap onto the next line */
+    max-width: 120px; /* Set a max-width that works for your layout */
+}
+  
+/*for breaking the date and time on mobile view on dashboard*/
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+    .datetime .date, .datetime .time {
+      display: block; /* Each span on a separate line */
+    }
+  }
+  
